@@ -35,3 +35,12 @@ body {
     font-weight: bolder;
     text-transform: uppercase;
 }
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
