@@ -1,6 +1,6 @@
 import { useForm } from "../../hooks/useForm"
 import Titulo from "../Titulo"
-
+import "./contactForm.css"
 
 const initialForm = {
 
