@@ -1,39 +1,23 @@
-import { useEffect, useState } from 'react';
 import Titulo from "../Titulo"
 import './PruebaTecnica.css'
+import { useCatImg } from '../../hooks/useCatImg';
+import { useCatFact } from '../../hooks/useCatFact';
 
-const CAT_ENDPOINT_FACT = 'https://catfact.ninja/fact'
 
 const PruebaTecnica = () => {
 
-    const [ fact, setFact ] = useState()
-    const [ imageUrl, setImageUrl ] = useState()
+    const { fact, refreshFact }  = useCatFact();
+    const { urlImg } = useCatImg({ fact });
 
-    useEffect( () => {
-        fetch(CAT_ENDPOINT_FACT)
-            .then(res => res.json())
-            .then(data => {
-                const { fact } = data
-                setFact( fact )
-
-                const threeFirstWords = fact.split(' ').slice(0,3).join(' ')
-
-                fetch(`https://cataas.com/cat/says/${threeFirstWords}?size=50&color=red&json=true`)
-                    .then(res => res.json())
-                    .then(response => {
-                        console.log(response)
-                        const { url } = response
-                        setImageUrl(`https://cataas.com${url}`)
-                    })
-            })
-    }, [])
+    const handleClick = () => refreshFact();
 
     return (
-    <article className="article-project">
+    <article className="article-project article-fact-cat">
         <Titulo titulo="Prueba técnica de gatos" />
-        <div className='container-lg'>
+        <button onClick={handleClick} >Get new fact</button>
+        <div className='container-fact'>
             { fact && <p>{fact}</p> }
-            { imageUrl && <img src={imageUrl} alt={`Image of ${fact}`} /> }
+            { urlImg && <img src={urlImg} alt='Imagen de gato sacada de la API cataas' />}
         </div>
     </article>
     )

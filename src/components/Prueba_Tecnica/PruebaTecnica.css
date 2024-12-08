@@ -1,3 +1,16 @@
-.container-lg{
-    margin: 0 50px;
+.article-fact-cat,
+.container-fact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.container-fact{
+    padding: 0 2rem;
+}
+
+.container-fact img{
+    max-width: 350px;
+    max-height: 350px;
 }
