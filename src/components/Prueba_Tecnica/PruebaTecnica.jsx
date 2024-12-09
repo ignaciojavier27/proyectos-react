@@ -14,7 +14,7 @@ const PruebaTecnica = () => {
     return (
     <article className="article-project article-fact-cat">
         <Titulo titulo="Prueba técnica de gatos" />
-        <button onClick={handleClick} >Get new fact</button>
+        <button onClick={handleClick} >Get New Fact</button>
         <div className='container-fact'>
             { fact && <p>{fact}</p> }
             { urlImg && <img src={urlImg} alt='Imagen de gato sacada de la API cataas' />}
