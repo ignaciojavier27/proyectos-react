@@ -10,11 +10,11 @@ function App() {
       <h1 className='text-center'>Ejercicios React</h1>
       <section className='section-projects'>
         <hr />
+        <ColorGenerator />
+        <hr />
         <PruebaTecnica />
         <hr />
         <Acordion />
-        <hr />
-        <ColorGenerator />
         <hr />
         <StarRating />
       </section>
