@@ -3,22 +3,20 @@ import Titulo from "../Titulo"
 import './ColorGenerator.css'
 
 const ColorGenerator = () => {
-  const [color, setColor] = useState("000");
+  const [color, setColor] = useState("000000");
 
   const options = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F']
 
-  const getRandomNumber = () => {
-    const number = (Math.random() * 15).toFixed(0);
+  const getRandomHexDigit = () => {
+    const number = Math.floor((Math.random() * 16));
     return number
   }
 
   const getRandomColor = () => {
 
     let newColor = '';
-
     for(let i=0; i < 6; i++){
-      const index = getRandomNumber();
-      const colorComponent = options[index]
+      const colorComponent = options[getRandomHexDigit()]
       newColor = newColor + colorComponent
     }
     setColor(newColor)
