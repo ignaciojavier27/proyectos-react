@@ -1,6 +1,6 @@
 import Acordion from './components/Accordion/Acordion'
 import ColorGenerator from './components/ColorGenerator/ColorGenerator'
-import PruebaTecnica from './components/Prueba_Tecnica/PruebaTecnica'
+// import PruebaTecnica from './components/Prueba_Tecnica/PruebaTecnica'
 import StarRating from './components/StarRating/StarRating'
 import './index.css'
 
@@ -10,13 +10,13 @@ function App() {
       <h1 className='text-center'>Ejercicios React</h1>
       <section className='section-projects'>
         <hr />
+        <StarRating />
+        <hr />
         <ColorGenerator />
         <hr />
-        <PruebaTecnica />
+        {/* <PruebaTecnica /> */}
         <hr />
         <Acordion />
-        <hr />
-        <StarRating />
       </section>
     </main>
   )
