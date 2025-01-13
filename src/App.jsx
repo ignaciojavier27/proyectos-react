@@ -12,7 +12,7 @@ function App() {
       <h1 className='text-center'>Ejercicios React</h1>
       <section className='section-projects'>
         <hr />
-        <ScrollIndicator />
+        <ScrollIndicator url="https://dummyjson.com/products?limit=10"/>
         <hr />
         <Carousel />
         <hr />
