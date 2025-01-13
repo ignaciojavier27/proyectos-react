@@ -1,6 +1,7 @@
 import Acordion from './components/Accordion/Acordion'
 import Carousel from './components/Carousel/Carousel'
 import ColorGenerator from './components/ColorGenerator/ColorGenerator'
+import ScrollIndicator from './components/ScrollIndicator/ScrollIndicator'
 // import PruebaTecnica from './components/Prueba_Tecnica/PruebaTecnica'
 import StarRating from './components/StarRating/StarRating'
 import './index.css'
@@ -10,6 +11,8 @@ function App() {
     <main>
       <h1 className='text-center'>Ejercicios React</h1>
       <section className='section-projects'>
+        <hr />
+        <ScrollIndicator />
         <hr />
         <Carousel />
         <hr />

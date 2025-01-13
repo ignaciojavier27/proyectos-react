@@ -9,8 +9,6 @@ const images = [
     { id: 4, url: "/imagen4.jpg", alt: "Descripción de la imagen 4" },
 ];
 
-console.log(images)
-
 const Carousel = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
