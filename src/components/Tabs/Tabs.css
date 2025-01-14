@@ -1,0 +1,31 @@
+.tabs-wrapper{
+    width: 100%;
+}
+
+.tabs-wrapper-heading{
+    display: flex;
+    justify-content: center;
+    gap:6px;
+}
+
+.tabs-wrapper-heading div{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.tabs-wrapper-content{
+    text-align: center;
+    color: red;
+}
+
+.tabs-wrapper-content div{
+    margin-top: 20px;
+}
+
+.tabs-wrapper-heading .active{
+    background-color: rgb(86, 7, 7);
+}

@@ -4,6 +4,7 @@ import ColorGenerator from './components/ColorGenerator/ColorGenerator'
 import ScrollIndicator from './components/ScrollIndicator/ScrollIndicator'
 // import PruebaTecnica from './components/Prueba_Tecnica/PruebaTecnica'
 import StarRating from './components/StarRating/StarRating'
+import TabsTest from './components/Tabs/TabsTest'
 import './index.css'
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
     <main>
       <h1 className='text-center'>Ejercicios React</h1>
       <section className='section-projects'>
+        <hr />
+        <TabsTest />
         <hr />
         <ScrollIndicator url="https://dummyjson.com/products?limit=10"/>
         <hr />
