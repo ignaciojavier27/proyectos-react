@@ -37,12 +37,6 @@ const ScrollIndicator = ({ url }) => {
 
   const handleScroll = () => {
     const d = document;
-    console.log(
-      d.body.scrollTop,
-      d.documentElement.scrollTop,
-      d.documentElement.scrollHeight,
-      d.documentElement.clientHeight
-    );
     const howMuchScrolled = d.body.scrollTop || d.documentElement.scrollTop;
 
     const height =
